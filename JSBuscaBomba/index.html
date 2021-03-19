@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca Bomba</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body onload="generarNumero();">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
+        <div class="container">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <h1><strong>Busca Bomba</strong></h1>
+                </a>
+            </div>
+            <div class="btn-group mr-4" role="group" aria-label="Grupo">
+                <button type="submit" onclick="location='../indexPrincipal.html'" class="btn btn-danger">Pagina
+                    Principal</button>
+            </div>
+    </nav>
+    <div align="center">
+        <div class="container">
+            <div class="card-body">
+                <div class="card-header">
+                    <h3><strong>Busca la bomba haciendo click en los diferentes cuadrados... Cuidado, solo tenes 5
+                            intentos!</strong></h3>
+                    <div class="btn-group-vertical mr-4" role="group" aria-label="Grupo1">
+                        <button id="1" type="submit" style='width:60px; height:60px;' onClick="queCuadro(1)"
+                            class="btn btn-primary btn-lg mt-4"></button>
+                        <button id="2" type="submit" style="width:60px; height:60px;" onClick="queCuadro(2)"
+                            class="btn btn-secondary btn-lg mt-4"
+                            onclick="location='./JSProductos/index.html'"></button>
+                        <button id="3" type="submit" style='width:60px; height:60px;' onClick="queCuadro(3)"
+                            class="btn btn-success btn-lg mt-4"></button>
+                        <button id="4" type="submit" style='width:60px; height:60px;' onClick="queCuadro(4)"
+                            class="btn btn-info btn-lg mt-4" onclick="location='./JSProductos/index.html'"></button>
+                        <button id="5" type="submit" style='width:60px; height:60px;' onClick="queCuadro(5)"
+                            class="btn btn-warning btn-lg mt-4"></button>
+                        <button id="6" type="submit" style='width:60px; height:60px;' onClick="queCuadro(6)"
+                            class="btn btn-danger btn-lg mt-4"></button>
+                    </div>
+                    <div class="btn-group-vertical mr-4" role="group" aria-label="Grupo2">
+                        <button id="7" type="submit" style='width:60px; height:60px;' onClick="queCuadro(7)"
+                            class="btn btn-danger btn-lg mt-4"></button>
+                        <button id="8" type="submit" style='width:60px; height:60px;' onClick="queCuadro(8)"
+                            class="btn btn-primary btn-lg mt-4"></button>
+                        <button id="9" type="submit" style='width:60px; height:60px;' onClick="queCuadro(9)"
+                            class="btn btn-secondary btn-lg mt-4"
+                            onclick="location='./JSProductos/index.html'"></button>
+                        <button id="10" type="submit" style='width:60px; height:60px;' onClick="queCuadro(10)"
+                            class="btn btn-success btn-lg mt-4"></button>
+                        <button id="11" type="submit" style='width:60px; height:60px;' onClick="queCuadro(11)"
+                            class="btn btn-info btn-lg mt-4"></button>
+                        <button id="12" type="submit" style='width:60px; height:60px;' onClick="queCuadro(12)"
+                            class="btn btn-warning btn-lg mt-4"></button>
+                    </div>
+                    <div class="btn-group-vertical mr-4" role="group" aria-label="Grupo3">
+                        <button id="13" type="submit" style='width:60px; height:60px;' onClick="queCuadro(13)"
+                            class="btn btn-warning btn-lg mt-4"></button>
+                        <button id="14" type="submit" style='width:60px; height:60px;' onClick="queCuadro(14)"
+                            class="btn btn-danger btn-lg mt-4"></button>
+                        <button id="15" type="submit" style='width:60px; height:60px;' onClick="queCuadro(15)"
+                            class="btn btn-primary btn-lg mt-4"></button>
+                        <button id="16" type="submit" style='width:60px; height:60px;' onClick="queCuadro(16)"
+                            class="btn btn-secondary btn-lg mt-4"></button>
+                        <button id="17" type="submit" style='width:60px; height:60px;' onClick="queCuadro(17)"
+                            class="btn btn-success btn-lg mt-4"></button>
+                        <button id="18" type="submit" style='width:60px; height:60px;' onClick="queCuadro(18)"
+                            class="btn btn-info btn-lg mt-4"></button>
+                    </div>
+                    <div class="btn-group-vertical mr-4" role="group" aria-label="Grupo4">
+                        <button id="19" type="submit" style='width:60px; height:60px;' onClick="queCuadro(19)"
+                            class="btn btn-info btn-lg mt-4"></button>
+                        <button id="20" type="submit" style='width:60px; height:60px;' onClick="queCuadro(20)"
+                            class="btn btn-warning btn-lg mt-4"></button>
+                        <button id="21" type="submit" style='width:60px; height:60px;' onClick="queCuadro(21)"
+                            class="btn btn-danger btn-lg mt-4"></button>
+                        <button id="22" type="submit" style='width:60px; height:60px;' onClick="queCuadro(22)"
+                            class="btn btn-primary btn-lg mt-4"></button>
+                        <button id="23" type="submit" style='width:60px; height:60px;' onClick="queCuadro(23)"
+                            class="btn btn-secondary btn-lg mt-4"></button>
+                        <button id="24" type="submit" style='width:60px; height:60px;' onClick="queCuadro(24)"
+                            class="btn btn-success btn-lg mt-4"></button>
+                    </div>
+                    <div class="btn-group-vertical mr-4" role="group" aria-label="Grupo5">
+                        <button id="25" type="submit" style='width:60px; height:60px;' onClick="queCuadro(25)"
+                            class="btn btn-success btn-lg mt-4"></button>
+                        <button id="26" type="submit" style='width:60px; height:60px;' onClick="queCuadro(26)"
+                            class="btn btn-info btn-lg mt-4"></button>
+                        <button id="27" type="submit" style='width:60px; height:60px;' onClick="queCuadro(27)"
+                            class="btn btn-warning btn-lg mt-4"></button>
+                        <button id="28" type="submit" style='width:60px; height:60px;' onClick="queCuadro(28)"
+                            class="btn btn-danger btn-lg mt-4"></button>
+                        <button id="29" type="submit" style='width:60px; height:60px;' onClick="queCuadro(29)"
+                            class="btn btn-primary btn-lg mt-4"></button>
+                        <button id="30" type="submit" style='width:60px; height:60px;' onClick="queCuadro(30)"
+                            class="btn btn-secondary btn-lg mt-4"></button>
+                    </div>
+                    <div class="btn-group-vertical mr-4" role="group" aria-label="Grupo6">
+                        <button id="31" type="submit" style='width:60px; height:60px;' onClick="queCuadro(31)"
+                            class="btn btn-secondary btn-lg mt-4"></button>
+                        <button id="32" type="submit" style='width:60px; height:60px;' onClick="queCuadro(32)"
+                            class="btn btn-success btn-lg mt-4"></button>
+                        <button id="33" type="submit" style='width:60px; height:60px;' onClick="queCuadro(33)"
+                            class="btn btn-info btn-lg mt-4"></button>
+                        <button id="34" type="submit" style='width:60px; height:60px;' onClick="queCuadro(34)"
+                            class="btn btn-warning btn-lg mt-4"></button>
+                        <button id="35" type="submit" style='width:60px; height:60px;' onClick="queCuadro(35)"
+                            class="btn btn-danger btn-lg mt-4"></button>
+                        <button id="36" type="submit" style='width:60px; height:60px;' onClick="queCuadro(36)"
+                            class="btn btn-primary btn-lg mt-4"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+
+</body>
+
+</html>

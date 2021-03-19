@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cambio de Color</title>
+        <link rel="stylesheet" href="bootstrap.min.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
+            <div class="container"> 
+                <a class="navbar-brand" href="#"><h1><strong>Cambio de Color</strong></h1></a>
+            </div>
+            <div class="btn-group mr-4" role="group" aria-label="Grupo">
+                <button type="submit" onclick ="location='../indexPrincipal.html'"
+                class="btn btn-danger">Pagina Principal</button>
+            </div>
+        </nav>
+
+        <div class="container" >
+        <div class="row max-height align-items-center text-center">
+            <div class="col">
+                <div class="btn-group mt-5" role="group" aria-label="Grupo1" id="botones">
+                    
+                    <button type="button"  onClick="definirBoton(1)" class="btn btn-info btn-lg mr-4" id="btn1" >Cambiar Color 1</button> 
+                    <button type="button"  onClick="definirBoton(2)" class="btn btn-danger btn-lg mr-4 " id="btn2" >Cambiar Color 2</button> 
+                    <button type="button"  onClick="definirBoton(3)" class="btn btn-warning btn-lg mr-4" id="btn3" >Cambiar Color 3</button> 
+                    <button type="button"  onClick="definirBoton(4)" class="btn btn-success btn-lg mr-4" id="btn4">Cambiar Color 4</button> 
+                </div>
+            </div> 
+        </div>           
+    </div>
+
+    <script src="app.js"></script>
+    </body>
+</html>

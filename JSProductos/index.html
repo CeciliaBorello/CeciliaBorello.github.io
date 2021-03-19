@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Productos</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">App Productos</a>
+        </div>
+        <div class="btn-group mr-4" role="group" aria-label="Grupo">
+            <button type="submit" onclick ="location='../indexPrincipal.html'"
+            class="btn btn-danger">Pagina Principal</button>
+        </div>
+    </nav>
+    <div class="container2">
+        <div id="app" class="row pt-5 pl-5">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Agregar un Producto</h4>
+                    </div>
+                    <div class="card-body">
+                        <form id="formProducto">
+                            <div class="form-group my-3">
+                                <input type="text" id="nombre" placeholder="Nombre Producto" class="form-control">
+                            </div>
+                            <div class="form-group my-3">
+                                <input type="number" id="precio" step="0.01" placeholder="Precio Producto"
+                                    class="form-control">
+                            </div>
+                            <div class="form-group my-3">
+                                <input type="number" id="anio" placeholder="Año creacion Producto" class="form-control"
+                                    min="1950" max="2021">
+                            </div>
+                            <input type="submit" class="btn btn-primary btn-block" value="Guardar">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div id="listaDeProductos"></div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

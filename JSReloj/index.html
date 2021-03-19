@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj Analogico</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body onload="dibujarReloj();">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
+        <div class="container">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <h1><strong>Reloj Analogico</strong></h1>
+                </a>
+            </div>
+            <div class="btn-group mr-4" role="group" aria-label="Grupo">
+                <button type="submit" onclick="location='../indexPrincipal.html'" class="btn btn-danger">Pagina
+                    Principal</button>
+            </div>
+    </nav>
+    <div align="center">
+        <div class="container">
+            <div class="card-body">
+                <div class="card text-white bg-dark mb-3" style="max-width: 10000px;">
+                    <div class="card-header">
+                        <h3><strong>LA HORA ES</strong></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div align="center">
+        <canvas id="canvas" width="610" height="610"></canvas>
+    </div>
+    <script src="app.js"></script>
+
+</body>
+
+</html>

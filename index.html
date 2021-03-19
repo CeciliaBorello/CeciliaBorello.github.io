@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Super Pagina - Ceci</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <h1><strong>Mi Super Pagina - Ceci</strong></h1>
+            </a>
+        </div>
+    </nav>
+
+    <div class="container2">
+        <div id="app" class="row pt-5 pl-5 pr-5">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h2><strong>Desafios Cumplidos</strong></h2>
+                        <div class="card-body">
+                            <div class="btn-group-vertical mr-4" role="group" aria-label="Grupo1">
+                                <button id="AppProductos" type="submit"
+                                    style='width:300px; height:100px; font-size:30px'
+                                    class="btn btn-outline-primary btn-lg"
+                                    onclick="location='./JSProductos/index.html'">App Productos</button>
+                                <button id="BuscaBomba" type="submit"
+                                    style='width:300px; height:100px; font-size:30px'
+                                    class="btn btn-outline-primary btn-lg mt-4"
+                                    onclick="location='./JSBuscaBomba/index.html'">Busca Bomba</button>
+                            </div>
+                            <div class="btn-group-vertical mr-4" role="group" aria-label="Grupo2">
+                                <button type="submit" id='AppTareas' onclick="location='./JSAppTareas/index.html'"
+                                    style='width:300px; height:100px; font-size:30px'
+                                    class="btn btn-outline-primary btn-lg">App Tareas</button>
+                                <button id="Ahorcado" type="submit" style='width:300px; height:100px; font-size:30px'
+                                    class="btn btn-outline-primary btn-lg mt-4" onclick="location='./JSAhorcado/index.html'">Ahorcado (abandonado)</button>
+                            </div>
+                            <div class="btn-group-vertical mr-4" role="group" aria-label="Grupo3">
+                                <button type="submit" id='AppCambioColor'
+                                    onclick="location='./JSCambioDeColor/index.html'"
+                                    style='width:300px; height:100px; font-size:30px'
+                                    class="btn btn-outline-primary btn-lg">Cambio Color</button>
+                                <button id="." type="submit"
+                                    style='width:300px; height:100px; font-size:30px'
+                                    class="btn btn-outline-primary btn-lg mt-4" onclick="location='./JSReloj/index.html'">Reloj</button>
+                            </div>
+                            <div class="btn-group-vertical mr-4" role="group" aria-label="Grupo3">
+                                <button type="submit" id='Calculadora' onclick="location='./JSCalculadora/index.html'"
+                                    style='width:300px; height:100px; font-size:30px'
+                                    class="btn btn-outline-primary btn-lg">Calculadora</button>
+                                <button id="." type="submit"
+                                    style='width:300px; height:100px; font-size:30px'
+                                    class="btn btn-outline-primary btn-lg mt-4" onclick="location=''">.</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="appPrincipal.js"></script>
+</body>
+
+</html>

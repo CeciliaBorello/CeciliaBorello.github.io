@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
+        <div class="container">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <h1><strong>Calculadora</strong></h1>
+                </a>
+            </div>
+            <div class="btn-group mr-4" role="group" aria-label="Grupo">
+                <button type="submit" onclick="location='../indexPrincipal.html'" class="btn btn-danger">Pagina
+                    Principal</button>
+            </div>
+    </nav>
+    <div align="center">
+        <div class="container">
+            <div class="card-body">
+                <div class="card col-md-6 ">
+                    <div class="form-group mt-2">
+                        <input class="form-control form-control-lg" type="double" placeholder="" id="visor">
+                    </div>
+                    <div class="btn-group-vertical mr-2 " role="group">
+                        <div class="btn-group mr-2" role="group">
+                            <button id="ac" type="submit" class="btn btn-outline-secondary btn-lg mt-2 mr-2"
+                                onClick="limpiarVisor()">AC</button>
+                            <button id="borrar" type="submit" class="btn btn-outline-secondary btn-lg mt-2 mr-2"
+                                onClick="borrar()">
+                                C</button>
+                        </div>
+                        <div class="btn-group mr-2" role="group">
+                            <button id="mas" type="submit" class="btn btn-outline-secondary btn-lg mt-2 mr-2"
+                                onClick="cualOperacion(1)">+</button>
+                            <button id="menos" type="submit" class="btn btn-outline-secondary btn-lg mt-2 mr-2"
+                                onClick="cualOperacion(2)">-</button>
+                            <button id="mul" type="submit" class="btn btn-outline-secondary btn-lg mt-2 mr-2"
+                                onClick="cualOperacion(3)">*</button>
+                            <button id="div" type="submit" class="btn btn-outline-secondary btn-lg mt-2 mr-2"
+                                onClick="cualOperacion(4)">/</button>
+                        </div>
+                        <div class="btn-group mr-2 " role="group" aria-label="Grupo3">
+                            <button id="siete" type="submit" class="btn btn-outline-primary btn-lg mt-2 mr-2"
+                                onClick="cambiarVisor(7)">7</button>
+                            <button id="ocho" type="submit" class="btn btn-outline-primary btn-lg mt-2 mr-2"
+                                onClick="cambiarVisor(8)">8</button>
+                            <button id="nueve" type="submit" class="btn btn-outline-primary btn-lg mt-2 mr-2"
+                                onClick="cambiarVisor(9)">9</button>
+                        </div>
+                        <div class="btn-group mr-2 " role="group" aria-label="Grupo2">
+                            <button id="cuatro" type="submit" class="btn btn-outline-primary btn-lg mt-2 mr-2"
+                                onClick="cambiarVisor(4)">4</button>
+                            <button id="cinco" type="submit" class="btn btn-outline-primary btn-lg mt-2 mr-2"
+                                onClick="cambiarVisor(5)">5</button>
+                            <button id="seis" type="submit" class="btn btn-outline-primary btn-lg mt-2 mr-2"
+                                onClick="cambiarVisor(6)">6</button>
+                        </div>
+                        <div class="btn-group mr-2 " role="group" aria-label="Grupo1">
+                            <button id="uno" type="submit" class="btn btn-outline-primary btn-lg mt-2 mr-2"
+                                onClick="cambiarVisor(1)">1</button>
+                            <button id="dos" type="submit" class="btn btn-outline-primary btn-lg mt-2 mr-2"
+                                onClick="cambiarVisor(2)">2</button>
+                            <button id="tres" type="submit" class="btn btn-outline-primary btn-lg mt-2 mr-2"
+                                onClick="cambiarVisor(3)">3</button>
+                        </div>
+                        <div class="btn-group mr-2 " role="group" aria-label="Grupo1">
+                            <button id="punto" type="submit" class="btn btn-outline-secondary btn-lg mt-2 mr-2"
+                                onClick="controlPunto()">.</button>
+                            <button id="cero" type="submit" class="btn btn-outline-primary btn-lg mt-2 mr-2"
+                                onClick="cambiarVisor(0)">0</button>
+                            <button id="igual" type="submit" class="btn btn-outline-secondary btn-lg mt-2 mr-2"
+                                onClick="mostrarResultado()">=</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
